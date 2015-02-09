@@ -1,9 +1,13 @@
-var http, server;
+'use strict';
+var http = require('http');
+var express = require('express');
+var app = express();
+var server = http.createServer(app);
 
-http = require( 'http' );
-server = http.createServer( function( request, response ){
-	response.writeHead( 200, { 'Content-Type': 'text/plain' } );
-	response.end( 'Hello, Node.js' );
-}).listen( 3000 );
+app.get('/', function(request, response) {
+    response.send('Hello Express');
+});
 
-console.log( 'Listening on port %d', server.address().port );
+server.listen(3000);
+
+console.log('Listening on port %d in %s mode', server.address().port, app.settings.env);
