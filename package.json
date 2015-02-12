@@ -4,6 +4,9 @@
 	"private": true,
 	"dependencies":{
 		"express": "*",
-		"mongodb": "2.*"
+		"mongodb": "2.*",
+		"passport": "*",
+		"passport-twitter": "*",
+		"express-session": "*"
 	}
 }
