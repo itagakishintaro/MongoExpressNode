@@ -1,6 +1,6 @@
 // http://passportjs.org/guide/twitter/
-var TWITTER_CONSUMER_KEY = 'Li7ar8FWkwB9JxyUg5I1qlNju';
-var TWITTER_CONSUMER_SECRET = 'RQShl22nO8bf6r1U8PVneH1IiUHupXWhTYTSLjYxUSt6rA45A1';
+var TWITTER_CONSUMER_KEY = 'TWITTER_CONSUMER_KEY';
+var TWITTER_CONSUMER_SECRET = 'TWITTER_CONSUMER_SECRET';
 var passport = require('passport')
   , TwitterStrategy = require('passport-twitter').Strategy;
 
